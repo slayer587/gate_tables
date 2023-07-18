@@ -1,5 +1,5 @@
 <script>
-  // Function to handle click and toggle description visibility
+  // Function to handle click and toggle description visibility hii there
   function toggleDescription() {
     var descriptionContent = this.nextElementSibling;
     if (descriptionContent.style.display === "none") {
