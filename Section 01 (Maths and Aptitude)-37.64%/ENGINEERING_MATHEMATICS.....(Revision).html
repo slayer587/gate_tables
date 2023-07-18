@@ -1,0 +1,270 @@
+<link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?export=download&id=1TW7u-BJ_-jteUBPN5sQAdHsgp0GH0Kff">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script>
+  // Function to handle click and toggle description visibility
+  function toggleDescription() {
+    var descriptionContent = this.nextElementSibling;
+    if (descriptionContent.style.display === "none") {
+      descriptionContent.style.display = "block";
+    } else {
+      descriptionContent.style.display = "none";
+    }
+  }
+
+  // Attach the click event to the summary text/button
+  var descriptionSummaries = document.querySelectorAll(".description-summary");
+  descriptionSummaries.forEach(function (summary) {
+    summary.addEventListener("click", toggleDescription);
+  });
+</script>
+<table>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Property</th>
+      <th>Definition</th>
+      <th>Formula</th>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Numerical Methods (<a href="https://youtu.be/lHdejFpRuzY">Video</a>)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Finding roots</td>
+      <td><b>(i) Newton-Raphson Method:<br><br>(ii) Secant method:</td>
+      <td>\(x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}\)<br>\(x_{n+2}=\frac{x_0 f(x_1)-x_1 f(x_0)}{f(x_1)-f(x_0)}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Ordinary differential equations (ODEs)</td>
+      <td><b>Taylor's method</td>
+      <td>\(y(t) = y(t_0) + h \cdot y'(t_0) + \frac{{h^2}}{{2!}} \cdot y''(t_0) + \frac{{h^3}}{{3!}} \cdot y'''(t_0) + \ldots\)</td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td></td>
+      <td><b>Euler Method</td>
+      <td>Forward Euler method: \(y_{i+1} = y_i + h \cdot f(x_i, y_i)\)<br>Backward/Modified Euler method: \(y_{i+1} = y_i + h \cdot f(x_{i+1}, y_{i+1})\)</td>
+    </tr>
+  <tr>
+  	<td colspan="4">Revision</td>
+  </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><b>Runge-Kutta Methods\(\quad\)......(Memorize)</b><br>The basic idea of the Runge-Kutta method is to approximate the solution of an ODE by evaluating the derivatives at different points within a small time step and then using a weighted average to update the solution to the next time step.</td>
+      <td>First-Order Runge-Kutta (RK1) Method:<br>\(y_{i+1} = y_i + k_1\)<br>\(k_1 = h \cdot f(x_i, y_i)\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Second-Order Runge-Kutta (RK2) Method:<br>\(y_{i+1} = y_i + \frac{1}{2}(k_1+k_2)\)<br>\(k_1 = h \cdot f(x_i, y_i)\)<br>\(k_2 = h \cdot f(x_i + \frac{h}{2}, y_i + \frac{k_1}{2})\)</td>
+      <td>Third-Order Runge-Kutta (RK3) Method:<br>\(y_{i+1} = y_i + \frac{1}{6}(k_1 + 4k_2 + k_3)\)<br>\(k_1 = h \cdot f(x_i, y_i)\)<br>\(k_2 = h \cdot f(x_i + \frac{h}{2}, y_i + \frac{k_1}{2})\)<br>\(k_3 = h \cdot f(x_i + h, y_i - k_1 + 2k_2)\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Fourth-Order Runge-Kutta (RK4) Method:<br>\(y_{i+1} = y_i + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)\)<br>\(k_1 = h \cdot f(x_i, y_i)\)<br>\(k_2 = h \cdot f(x_i + \frac{h}{2}, y_i + \frac{k_1}{2})\)<br>\(k_3 = h \cdot f(x_i + \frac{h}{2}, y_i + \frac{k_2}{2})\)<br>\(k_4 = h \cdot f(x_i + h, y_i + k_3)\)</td>
+      <td></td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Differential equations</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Exact differential equations</td>
+      <td>It is a special class of differential equations for which there exists a potential function (also known as the integrating factor) whose partial derivatives satisfy the equation.</td>
+      <td>Mdx + Ndy = 0 where \(\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}\quad \).....(Analysis needed)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="description-cell"><b>Cauchy-Euler equation</b>
+      <span class="description-summary">Example</span>
+      <div class="description-content">
+        Hiii there.
+      </div>
+    </td>
+      <td>A linear homogeneous differential equation with constant coefficients in which the dependent variable is raised to a power. It is typically solved using the characteristic equation method.</td>
+      <td>\(a x^2 \frac{{d^2 y}}{{dx^2}} + b x \frac{{dy}}{{dx}} + cy = 0 \quad \).....(Analysis needed)</td>
+    </tr>
+  <tr>
+    <td></td>
+    <td>Calculation Particular integral \(y_p = \frac{Q(x)}{F(D)}\) (<a href="https://youtu.be/i-Qg1Kd8KdM">Video</a>)</td>
+    <td>\(Q(x)= e^{ax+b}\)<br>\(y_p = \frac{1}{F(D)}{e^{ax+b}} \Rightarrow \frac{1}{F(a)}{e^{ax+b}}\)<br>\(\quad \quad \quad \quad \quad \quad \quad \Rightarrow x \cdot \frac{1}{F'(a)}{e^{ax+b}}\quad \).....(When F(a)=0)<br>\(\quad \quad \quad \quad \quad \quad \quad \Rightarrow x^2 \cdot \frac{1}{F''(a)}{e^{ax+b}}\quad \).....(When F'(a)=0)</td>
+    <td>\(Q(x)= \sin(ax+b)\text{ or }\cos(ax+b)\)<br>\(y_p = \frac{1}{F(D)}{\sin(ax+b)} = \frac{1}{\phi(D^2)}{\sin(ax+b)}\quad \)......(Put \(D^2 = -a^2\))<br>\(\quad \quad \quad \quad \quad \quad \quad \Rightarrow x \cdot \frac{1}{\phi'(-a^2)}{\sin(ax+b)}\quad \).....(When \(\phi(-a^2)=0\))<br>\(\quad \quad \quad \quad \quad \quad \quad \Rightarrow x^2 \cdot \frac{1}{\phi''(-a^2)}{\sin(ax+b)}\quad \).....(When \(\phi'(-a^2\))=0)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Polynomial terms in \(x\)<br>\(y_p = \frac{Q(x)}{F(D)}\)<br>Step 1 : Arrange F(D) in increasing power of D.<br>Step 2 : Perform long division.</td>
+    <td>\(Q(x)= e^{ax} \cdot V\quad \).......(Where \(V\) is sinusoidal or polynomial term)<br>\(y_p = \frac{1}{F(D)}e^{ax}.V = e^{ax}{\frac{v}{F(D+a)}}\)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>\(Q(x)= x\sin{(ax)}\text{ or } x\cos{(ax)}\)<br>\(y_p = \frac{1}{F(D)}x\sin(ax) = \left(x-\frac{F'(D)}{F(D)}\right)\frac{1}{F(D)}\sin(ax)\)</td>
+    <td>For any Q(x)<br>Non Homogenous D.E<br>\(y_c=C_1y_1(x)+C_2y_2(x)\)<br>P.I by Wronskian Parameter : <br>W = \(\begin{bmatrix} y_1(x) & y_2(x) \\ y_1'(x) & y_2'(x) \\ \end{bmatrix}\)<br>\(y_p = -y_1(x) \int \frac{y_2(x).Q(x)}{W}dx+y_2(x)\int \frac{y_1(x).Q(x)}{W}dx\)</td>
+  </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Here are some commonly used Taylor series expansions of well-known functions\(\quad \).....(Memorize)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Taylor series expansions</td>
+      <td>Sine Function: \(\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \ldots\)</td>
+      <td>Exponential Function: \(e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \ldots\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Cosine Function: \(\cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots\)</td>
+      <td>Natural Logarithm Function: \(\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \ldots\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Tangent Function: \(\tan(x) = x + \frac{x^3}{3} + \frac{2x^5}{15} + \frac{17x^7}{315} + \ldots\)</td>
+      <td>Geometric Series: \(\frac{1}{1-x} = 1 + x + x^2 + x^3 + \ldots\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Binomial Series: \((1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \ldots\)</td>
+      <td></td>
+    </tr>
+  <!---------------------------------------------------------> 
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Fourier series</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Fourier series</td>
+      <td>A representation of a periodic function as an infinite sum of sine and cosine functions (or complex exponentials), allowing the function to be expressed in terms of its frequency components.</td>
+      <td>\(f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n\cos(nx) + b_n\sin(nx)\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td >The coefficients \(a_0\), \(a_n\), and \(b_n\) for a Fourier series of a function f(x) are given by:</td>
+      <td>\(a_0 = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)dx\)<br>\(a_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos(nx)dx\)</br>\(b_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin(nx)dx\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Euler's Formula</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>\(e^{ix} = \cos(x) + i \sin(x)\)</td>
+      <td>\(\sin(x) = \frac{e^{ix} - e^{-ix}}{2i}\)<br>\(\cos(x) = \frac{e^{ix} + e^{-ix}}{2}\)</td>
+      <td>\(\sinh(x) = \frac{e^x - e^{-x}}{2}\)<br>\(\cosh(x) = \frac{e^x + e^{-x}}{2}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>\(e^{iz} = \cos(z) + i \sin(z)\)<br></td>
+      <td>\(\sin(z) = \frac{e^{iz} - e^{-iz}}{2i}\)<br>\(\cos(z) = \frac{e^{iz} + e^{-iz}}{2}\)</td>
+      <td>\(\sinh(z) = \frac{e^z - e^{-z}}{2}\)<br>\(\cosh(z) = \frac{e^z + e^{-z}}{2}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Laplace Transformation</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Laplace Transform properties</td>
+      <td>Properties that apply to the Laplace transform, including linearity, shifting, scaling, differentiation, integration, initial value theorem, final value theorem, convolution, and Laplace transform of derivatives and integrals.</td>
+      <td>\(L\left\{ {F\left( t \right)} \right\} = \mathop \smallint \limits_0^\infty {e^{ - st}} \cdot F\left( t \right)dt\)<br>\(L\left\{ {\frac{F(t)}{t}} \right\} = \mathop \smallint \limits_s^\infty F(s)ds\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Mean Value Theorem</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><b>Lagrange's Mean Value Theorem<br>\(\frac{f(b) - f(a)}{b - a} = f'(c)\)</td>
+      <td><b>Cauchy's Mean Value Theorem<br>\(\frac{{f(b) - f(a)}}{{g(b) - g(a)}} = \frac{{f'(c)}}{{g'(c)}}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="3">Differentiation & Integration</td>
+    </tr>  
+    <tr>
+      <td></td>
+      <td></td>
+      <td><b>Differentiation<br>\(\frac{d}{{dx}}(\tan^{-1}x) = \frac{1}{{1+x^2}}\)</td>
+      <td><b>Integration<br>\(\int \frac{{f'(x)}}{{f(x)}} \, dx = \ln|f(x)| + C\)<br>\(\int \frac{1}{{x^2+a^2}} \, dx = \frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right) + C\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Trigonometric identity \(\quad \).....(Memorize these)</td>
+      <td>An equation involving trigonometric functions that holds true for all values of the variables involved. Examples include the Pythagorean identities, sum and difference identities, and double angle identities.</td>
+      <td>\(2\sin(A)\cos(B) = \sin(A+B)+\sin(A-B)\)<br>\(2\sin(A)\sin(B) = \cos(A-B)-\cos(A+B)\)<br>\(\sin(A+B) = \sin(A)\cos(B)+\cos(A)\sin(B)\)<br>\(\cos(A+B) = \cos(A)\cos(B)-\sin(A)\sin(B)\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Green's theorem</td>
+      <td>A fundamental result in vector calculus that establishes the relationship between a line integral around a simple closed curve and a double integral over the plane region enclosed by the curve.</td>
+      <td>\(\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_D (\nabla \times \mathbf{F}) \cdot d\mathbf{A}\)<br>\(\oint_C Mdx + Ndy = \iint_D \left( {\frac{{\partial N}}{{\partial x}} - \frac{{\partial M}}{{\partial y}}} \right)dx\;dy\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Harmonic function</td>
+      <td>A function that satisfies Laplace's equation, meaning its second partial derivatives with respect to the independent variables sum up to zero. Harmonic functions often arise in physical and engineering applications.</td>
+      <td>If \(u(x, y)\) is a harmonic function, it satisfies Laplace's equation: \(u_{xx} + u_{yy} = 0\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Implicit differentiation</td>
+      <td>A technique used to differentiate equations that cannot be easily solved for a specific variable. It involves differentiating both sides of an equation with respect to a common variable and treating the other variables as implicit functions.</td>
+      <td>\(\frac{{dy}}{{dx}} = \frac{{ - \partial f/\partial x}}{{\partial f/\partial y}}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Determinant properties</td>
+      <td>Characteristics of determinants, such as linearity, scalar multiplication, addition/subtraction of rows or columns, and properties related to the determinant of a matrix and its transpose or inverse.</td>
+      <td>\(|A^n|=|A|^n\)<br>\(|AB|=|A|\cdot|B|\)</td>
+    </tr>
+  <!---------------------------------------------------------> 
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Inclusion-Exclusion Principle (<a href="https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle">Wikipedia</a>)</td>
+      <td>A principle used in combinatorics to count the number of elements in the union of multiple sets. It states that to calculate the total count, we need to include the elements in each set, exclude the elements common to two sets, include the elements common to three sets, and so on.</td>
+      <td>\(|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |B \cap C| - |C \cap A| + |A \cap B \cap C|\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Contour Integral (Residue Theorem)</td>
+      <td>A contour integral of the form \(\oint_{\Gamma} F(z) \, dz\) can be evaluated using the Residue Theorem, which states that the value of the integral around a closed path \(\Gamma\) enclosing an isolated singularity is \(2\pi i\) times the residue of the function at that singularity.</td>
+      <td>\(\text{Res}(f, a) = \lim_{{z \to a}} (z - a) \cdot F(z)\)<br>\(\oint_{\Gamma} F(z) \, dz = 2\pi i \left(\text{Res}(f, a_1) + \text{Res}(f, a_2)\right) + \ldots\) (Residue Theorem)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Solenoidal Vector Field</td>
+      <td>For a vector field \(\mathbf{V}\), it is solenoidal if its divergence \(\nabla \cdot \mathbf{V}\) is zero everywhere in the domain.</td>
+      <td>\(\nabla \cdot \mathbf{V} = 0\) (Solenoidal Condition)</td>
+    </tr>
+  <!--------------------------------------------------------->
+     <tr>
+      <td>\(\Rightarrow\)</td>
+      <td>Solution of AX = B</td>
+      <td colspan="2">The system AX = B has,<br>A unique solution if and only if Rank of A = Rank of [A|B] = Number of variables<br>Infinitely many solutions (consistent) if Rank of A = Rank of [A|B] < Number of variables<br>No solution (inconsistent) if Rank of A ≠ Rank of [A|B], i.e Rank of A < Rank of [A|B]</td>
+    </tr>
+  <!--------------------------------------------------------->
+<script src="https://drive.google.com/uc?export=download&id=1vF8Cf82hU5k6sitlk6IgdKx_qFyfxMbN" async></script>

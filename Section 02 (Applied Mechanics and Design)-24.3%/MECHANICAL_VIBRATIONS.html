@@ -1,0 +1,64 @@
+<link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?export=download&id=1TW7u-BJ_-jteUBPN5sQAdHsgp0GH0Kff">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<table>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Property</th>
+      <th>Definition</th>
+      <th>Formula</th>
+    </tr>
+  <!--------------------------------------------------------->
+  <tr>
+    <td>\(\Rightarrow\)</td>
+    <td colspan="4">Calculation of natural frequency</td>
+  </tr>
+    <tr>
+      <td></td>
+      <td>Rayleigh Method (<a href="">Video</a>)</td>
+      <td>The Rayleigh method is an approximate technique used to estimate the natural frequencies of a structure by employing simplified assumptions and the Rayleigh quotient.</td>
+      <td>\(\omega_n = \sqrt{\frac{g}{\Delta}}\quad\text{(Emperical)}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Energy method (<a href="https://youtu.be/eCOepafUqVI">Video</a>)</td>
+      <td>The energy method is a technique used to calculate the natural frequency of a system. It is based on the principle of conservation of energy, which states that the total energy of a system remains constant.</td>
+      <td>\(E=\frac{1}{2}mv^2+\frac{1}{2}I\omega^2+\frac{1}{2}Sx^2\quad\).....(Where \(I=\frac{1}{2}mR^2\))</td>
+    </tr>
+  <!--------------------------------------------------------->
+  <tr>
+  	<td>\(\Rightarrow\)</td>
+      <td colspan="4">Vibration Analysis</td>
+  </tr>
+    <tr>
+      <td></td>
+      <td>Damping Ratio (\(\zeta\)) (<a href="https://www.youtube.com/live/0X4QhZ8bLeQ?feature=share">Video</a>)</td>
+      <td>The damping ratio is a parameter that describes the level of damping or dissipation in a vibrating system. It represents the ratio of the actual damping in the system to the critical damping.</td>
+      <td>\(\zeta = \frac{c}{2m\omega_n}\)</td>
+    </tr>
+  <tr>
+    <td></td>
+    <td>Damped Frequency (\(\omega_d\))</td>
+    <td>The damped frequency is the frequency at which a damped vibrating system oscillates. It takes into account the effect of damping and is typically lower than the natural frequency of the undamped system.</td>
+    <td>\(\omega_d = \omega_n \sqrt{1-\zeta^2}\)</td>
+  </tr>    
+    <tr>
+      <td></td>
+      <td>Damped Vibration (No External Force) (<a href="https://www.youtube.com/live/W_osc4AT7pA?feature=share">Video</a>)</td>
+      <td>Damped vibration refers to the oscillatory motion of a system in the presence of damping forces, but without the influence of any external force. The amplitude of the vibrations gradually decreases over time due to energy dissipation.</td>
+      <td>\(x = Ae^{-\zeta \omega_n t}(\sin(\omega_d t+\phi))\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Damped Vibration (External Forces) (<a href="https://www.youtube.com/live/LCaFdbcBzAI?feature=share">Video</a>)</td>
+      <td>Damped vibration with an external force refers to the oscillatory motion of a system subjected to both damping forces and the influence of an external force. The response of the system is influenced by both the external force and the damping present in the system.</td>
+      <td>\(x=\frac{\frac{F_0}{S}\sin{\left(\omega t-\phi \right)}}{\sqrt{\left[1-\left(\frac{\omega}{\omega_n}\right)^2\right]^2+\left[2\zeta\frac{\omega}{\omega_n}\right]^2}}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+  	<tr>
+      <td>\(\Rightarrow\)</td>
+      <td>Transmissibility (\(\epsilon\)) (<a href="https://youtu.be/DvUJmR8QOcw">Video</a>), (<a href="https://drive.google.com/file/d/1LGVtskyuOcmhtaEqQk9TwuzS59my8oIY/view?usp=sharing">Diagram</a>)</td>
+      <td>Transmissibility (\(\epsilon\)) is a measure of the amplification or attenuation of a force (\(F_T\)) transmitted through a dynamic system compared to an input force (\(F_0\)). It is influenced by the spring force (\(F_{spring}\)), damping force (\(F_{damping}\)), and the system's natural frequency (\(\omega_n\)).</td>
+      <td>\(F_T=\sqrt{\left(F_{spring}\right)^2+\left(F_{damping}\right)^2}\)<br>\(\quad=\sqrt{(SA)^2+(CA\omega)^2}\)<br>\(\epsilon =\frac{F_T}{F_0}= \frac{\sqrt{1+\left(\frac{\omega}{\omega_n}\right)^2}}{\sqrt{\left(1-\left(\frac{\omega}{\omega_n}\right)^2\right)^2+\left(2\zeta \frac{\omega}{\omega_n}\right)^2}}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+  	

@@ -1,0 +1,53 @@
+<style>
+/* Initially hide the full description */
+.description-content {
+  display: none;
+}
+
+/* Style the summary text/button */
+.description-summary {
+  cursor: pointer;
+  color: blue; /* Customize the color as needed */
+  text-decoration: underline;
+}
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td[colspan="3"] {
+    border: none;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #c6e2ff;
+  }
+  td[colspan="4"] {
+    border: none;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ff0000;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  td:nth-child(1) {
+  font-size: 20px;
+  }
+  td:nth-child(2) {
+  font-size: 12px;
+  }
+  td:nth-child(3) {
+  font-size: 12px;
+  }
+  td:nth-child(4) {
+  font-size: 12px;
+  }
+</style>

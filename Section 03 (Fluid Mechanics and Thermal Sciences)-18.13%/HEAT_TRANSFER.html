@@ -1,0 +1,158 @@
+<link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?export=download&id=1TW7u-BJ_-jteUBPN5sQAdHsgp0GH0Kff">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<table>
+    <tr>
+      <th>Sr No.</th>
+      <th>Property</th>
+      <th>Definition</th>
+      <th>Formula</th>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="4">Dimensionless Numbers</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fourier Number</td>
+      <td>The Fourier Number is a dimensionless quantity used in transient heat conduction analysis. It represents the ratio of the rate of heat conduction within a material to the rate of thermal energy storage in the material. It is defined as the product of thermal diffusivity and time, divided by the square of the characteristic length scale. The Fourier number describes how quickly temperature changes propagate through a solid material during transient heat conduction.</td>
+      <td>\(Fo = \frac{\dot Q_{conduction}}{\dot Q_{stored}} = \frac{\alpha t}{L_c^2}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Biot Number</td>
+      <td>The Biot Number is a dimensionless number used to analyze heat transfer between a solid object and the surrounding fluid. It compares the resistance to heat transfer within the object (conduction) to the resistance to heat transfer at the surface (convection). It is defined as the product of convective heat transfer coefficient and characteristic length scale, divided by the thermal conductivity of the object. The Biot number helps determine whether conduction or convection dominates the heat transfer process. A high Biot number indicates that convection plays a significant role, while a low Biot number suggests that conduction is dominant.</td>
+      <td>\(Bi = \frac{R_{conduction}}{R_{convection}} = \frac{hL_c}{k}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nusselt Number</td>
+      <td>The Nusselt Number is a dimensionless number used to quantify convective heat transfer. It represents the ratio of convective heat transfer to conductive heat transfer across a boundary layer. It is defined as the product of convective heat transfer coefficient and characteristic length scale, divided by the thermal conductivity of the fluid.</td>
+      <td>\(Nu=\frac{hL_c}{k}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Reynolds Number</td>
+      <td>The Reynolds Number is a dimensionless number used to characterize the flow of a fluid. It compares the inertial forces to the viscous forces within the fluid. It is defined as the product of fluid velocity, characteristic length scale, and fluid density, divided by the fluid viscosity.</td>
+      <td>\(Re = \frac{F_{inertia}}{F_{viscous}} =\frac{\rho VD}{\mu}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Prandtl Number</td>
+      <td>The Prandtl Number is a dimensionless number used to describe the relative thickness of the momentum boundary layer to the thermal boundary layer in a fluid. It is defined as the ratio of momentum diffusivity (kinematic viscosity) to thermal diffusivity. It is an indicator of the relative importance of conduction and convection in heat transfer. It helps determine the thermal boundary layer thickness and the heat transfer characteristics of the fluid.</td>
+       <td>\(Pr = \frac{\nu}{\alpha} =\frac{\mu C}{k}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td>Transient Heat transfer for lumped parameter analysis</td>
+      <td>Transient heat transfer refers to the process of heat transfer that occurs during a time-dependent temperature change. Lumped parameter analysis is a simplified approach to analyze transient heat transfer in which the temperature variation within a solid object is assumed to be uniform. This assumption allows the object to be treated as a single lumped parameter with a uniform temperature.</td>
+      <td>\(mC\frac{dT}{dt}=hA\left(T-T_{\infty}\right)\) \(\Rightarrow \frac{T - T_\infty}{T_i - T_\infty}=e^{-\frac{hA}{\rho C V}t}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="4">Analysis of Fins (General equation: \(\frac{d^2\theta}{dx^2} - m^2 \theta = 0 \quad\).....Where, \(m = \sqrt{\frac{hP}{kA}}\)) (<a href="https://drive.google.com/file/d/1t7m0ijpjUqT9uxJdVAfOzaVhoR9emqMM/view?usp=sharing">Analysis</a>)</td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td>For Infinitely long fin (<a href="https://www.youtube.com/live/WbiyOe02l4s?feature=share">Video</a>)</td>
+      <td>Temperature distribution is given by:<br><br>Heat transfer rate is given by:</td>
+      <td>\(\Rightarrow \theta = \theta_b e^{-mx}\)<br>\(\Rightarrow q = \sqrt{hPkA_c}.\theta_b\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td>LMTD (<a href="https://www.youtube.com/live/UZFl8C8wCdw?feature=share">Video 1</a>), (<a href="https://www.youtube.com/live/2WgP98QBrJ4?feature=share">Video 2</a>)</td>
+      <td>LMTD is a parameter used in the design and analysis of heat exchangers. It is the logarithmic average of the temperature differences between the hot and cold fluids at each end of the heat exchanger. It is used to calculate the effectiveness and overall heat transfer coefficient of a heat exchanger.</td>
+      <td>\(\Delta T_{\text{LMTD}} = \frac{\theta_1 - \theta_2}{\ln\left(\frac{\theta_1}{\theta_2}\right)}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Overall heat transfer coefficient</td>
+      <td>\(U = \frac{1}{\frac{1}{R_{\text{cond}}}+\frac{1}{R_{\text{conv}}}}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(<a href="https://www.youtube.com/live/Vryg9Rum1a8?feature=share">Video</a>)</td>
+      <td>Heat exchanger effectiveness</td>
+      <td>\(\epsilon = \frac{Q_{\text{actual}}}{Q_{\text{max}}}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Heat capacity ratio</td>
+      <td>\(C_r = \frac{\dot{m} C_{p,\text{min}}}{\dot{m} C_{p,\text{max}}}\)</td
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Number of Transfer Units</td>
+      <td>\(NTU = \frac{UA}{\dot{m} C_{p,\text{min}}}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Heat exchanger effectiveness (parallel flow)</td>
+      <td>\(\epsilon = \frac{1 - \exp(-NTU(1+C_r))}{1+C_r}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Heat exchanger effectiveness (counter flow)</td>
+      <td>\(\epsilon = \frac{1 - \exp(-NTU(1-C_r))}{1 - C_r \exp(-NTU(1-C_r))}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Heat exchanger effectiveness (evaporator and condenser type)</td>
+      <td>\(\epsilon = 1 - \exp(-NTU)\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Heat exchanger effectiveness (equal heat capacity rate, parallel flow)</td>
+      <td>\(\epsilon = \frac{1 - \exp(-2NTU)}{2}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Heat exchanger effectiveness (equal heat capacity rate, counter flow)</td>
+      <td>\(\epsilon=\frac{NTU}{1+NTU}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+  <tr>
+    <td>\(\Rightarrow\)</td>
+    <td>Wein's displacement law (<a href="https://youtu.be/Q_FsPlOHUJM">Video</a>)</td>
+    <td>Wien's Displacement Law is a fundamental principle in thermodynamics and describes the relationship between the temperature of a blackbody radiator and the wavelength at which it emits radiation. It states that the wavelength of maximum radiation emitted by a blackbody is inversely proportional to its absolute temperature.</td>
+    <td>\( \lambda_{\text{max}} \cdot T = \text{constant} \)</td>
+  </tr>
+  <!--------------------------------------------------------->
+  <tr>
+    <td>\(\Rightarrow\)</td>
+    <td>Lambert's cosine law</td>
+    <td>Lambert's Cosine Law, also known as Lambert's Law, describes the relationship between the radiant intensity of a surface and the angle of incidence of radiation on the surface. It states that the radiant intensity of a surface is directly proportional to the cosine of the angle between the incident radiation and the surface normal.</td>
+    <td>\( I \propto \cos(\theta) \)</td>
+  </tr>
+  <!--------------------------------------------------------->
+  <tr>
+    <td>\(\Rightarrow\)</td>
+    <td>Stefan-Boltzmann law</td>
+    <td>The Stefan-Boltzmann Law is a fundamental principle in thermodynamics that relates the total amount of radiant energy emitted by a blackbody per unit time (also known as the radiant flux or power) to its absolute temperature. It states that the radiant flux is proportional to the fourth power of the absolute temperature and is given by the Stefan-Boltzmann constant.</td>
+    <td>Total Emmisive Power \( P = \sigma \epsilon (T_2^4 - T_1^4) \)</td>
+  </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td>General Heat Conduction Equation (<a href="https://youtu.be/07upq4MzrQY">Video</a>)</td>
+      <td>The general heat conduction equation, also known as Fourier's Law of Heat Conduction, describes the rate of heat transfer through a solid medium. It states that the heat flux is proportional to the negative gradient of temperature, with the proportionality constant being the thermal conductivity of the material. It is expressed as \(q = -k \cdot \nabla T\), where \(q\) is the heat flux, \(k\) is the thermal conductivity, and \(\nabla T\) is the temperature gradient.</td>
+      <td>(i) Cartesian Coordinate System:<br>\(\frac{{\partial T}}{{\partial t}} = \alpha \left(\frac{{\partial^2 T}}{{\partial x^2}} + \frac{{\partial^2 T}}{{\partial y^2}} + \frac{{\partial^2 T}}{{\partial z^2}}\right)\)<br>(ii) Cylindrical Coordinate System:<br>\(\frac{{\partial T}}{{\partial t}} = \alpha \left(\frac{1}{r}\frac{{\partial}}{{\partial r}}\left(r\frac{{\partial T}}{{\partial r}}\right) + \frac{1}{r^2}\frac{{\partial^2 T}}{{\partial \theta^2}} + \frac{{\partial^2 T}}{{\partial z^2}}\right)\)<br>(iii) Spherical Coordinate System:<br>\(\frac{{\partial T}}{{\partial t}} = \alpha \left(\frac{1}{r^2}\frac{{\partial}}{{\partial r}}\left(r^2\frac{{\partial T}}{{\partial r}}\right) + \frac{1}{r^2\sin \theta}\frac{{\partial}}{{\partial \theta}}\left(\sin \theta\frac{{\partial T}}{{\partial \theta}}\right) + \frac{1}{r^2\sin^2 \theta}\frac{{\partial^2 T}}{{\partial \phi^2}}\right)\)</td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td>(i) Fourier-Biot equation: <br><br>(ii) Poisson equation: <br><br>(iii) Diffusion equation: </td>
+    	<td>\( \nabla^2 T + \frac{\dot q}{k} = \frac{1}{\alpha}\frac{{\partial T}}{{\partial t}}\)<br>\(\nabla^2 T = -\frac{{q}}{{k}}\)<br>\(\nabla^2 T = \frac{1}{\alpha} \frac{{\partial T}}{{\partial t}}\)</td>
+    </tr>
+  <!--------------------------------------------------------->

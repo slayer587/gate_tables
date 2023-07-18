@@ -1,0 +1,125 @@
+<link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?export=download&id=1TW7u-BJ_-jteUBPN5sQAdHsgp0GH0Kff">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<table>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Property</th>
+      <th>Definition</th>
+      <th>Formula</th>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="4">Fatigue Analysis</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Mean Stress (\( \sigma_m \))</td>
+      <td>The average stress experienced by a material over a load cycle, accounting for both tensile and compressive stresses.</td>
+      <td>\( \sigma_m = \frac{{\sigma_{\text{max}} + \sigma_{\text{min}}}}{2} \)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Amplitude Stress (\( \sigma_a \))</td>
+      <td>The fluctuating stress magnitude from the mean stress in a load cycle, indicating the range of stress variation.</td>
+      <td>\( \sigma_a = \frac{{\sigma_{\text{max}} - \sigma_{\text{min}}}}{2} \)</td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td><b>Stress Concentration Factor (<a href="https://www.youtube.com/live/ysveXh6s1j8?feature=share">Video</a>)</td>
+      <td>A factor that quantifies the increase in local stress at a notch or stress concentration compared to the nominal stress level. It accounts for the geometric irregularities that lead to stress concentration, which can significantly affect the fatigue life of a component.</td>
+      <td>\( K_t \) represents the Theoretical stress concentration factor.<br>\( K_f \) represents the Fatigue stress concentration factor.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Notch Sensitivity Factor (\( q \))</td>
+      <td>A factor that quantifies the sensitivity of a material to the presence of notches or stress concentration features, affecting its fatigue life.</td>
+      <td>\( q = \frac{{K_f - 1}}{{K_t - 1}} \)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Endurance Strength (<a href="https://www.youtube.com/live/UlUMh-480qY?feature=share">Video</a>)</td>
+      <td>\(S_e\) represents the endurance strength or endurance limit of the material. It is the maximum stress level that the material can withstand indefinitely without experiencing fatigue failure.</td>
+      <td>\(S_f\) represents the fatigue strength of the material. It is the stress level at which the material will fail due to fatigue after a certain number of cycles.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Corrected Endurance Strength (\( S_e \)) (<a href="https://www.youtube.com/live/UlUMh-480qY?feature=share">Video</a>)</td>
+      <td>The endurance strength of a material adjusted for the influence of surface finish, roughness, reliability and stress concentration, providing a more accurate estimation of fatigue life.</td>
+      <td>\( S_e' = k_a k_b k_c k_d S_e \)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Completely reversed stresses (<a href="https://youtu.be/dCKfMgm5WYI">Video</a>)</td>
+      <td>Cyclic loading where the stress alternates between maximum tension and maximum compression, commonly encountered in many mechanical applications.</td>
+      <td>For infinite life: \(\sigma_{max}=\frac{S_e}{FOS}\) <br>For finite life: \(\sigma_{max}=\frac{S_f}{FOS}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Fluctuating stresses (Infinite life) (<a href="https://drive.google.com/file/d/1_uHfE6lFaiKl2B4Ylh7fNKDIF7BZkXmt/view?usp=sharing">Diagram</a>)</td>
+      <td>Stresses below the endurance limit that can be sustained indefinitely without causing fatigue failure, representing an infinite fatigue life region.</td>
+      <td>Gerber's criteria: \(\left(\frac{FOS.\sigma_m}{S_{ut}}\right)^2 + \frac{FOS.\sigma_a}{S_e} = 1\)<br>Goodman's criteria: \(\frac{\sigma_m}{S_{ut}} + \frac{\sigma_a}{S_e} = \frac{1}{FOS}\)<br>Soderberg's criteria: \(\frac{\sigma_m}{S_{yt}} + \frac{\sigma_a}{S_e} = \frac{1}{FOS}\)<br>Modified Goodman's criteria: Formula not provided (refer to the provided video for the specific formula).</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="4">Dynamometer (A device used for measuring the torque and brake power required to operate a driven machine. It has a device to measure the frictional resistance.)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Prony Brake Dynamometer</td>
+      <td colspan="3">A device used to measure the power output of an engine by applying an adjustable braking torque, allowing performance evaluation and efficiency analysis.</td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td><b>Epicyclic-train Dynamometer</td>
+      <td colspan="3">A dynamometer that utilizes an epicyclic gear train to measure torque and speed in rotating machinery, providing accurate power measurement.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Torsion Dynamometer</td>
+      <td colspan="3">A device used to measure torque by subjecting a calibrated shaft to twisting deformation, providing a direct measurement of torque.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Belt Transmission Dynamometer</td>
+      <td colspan="3">A dynamometer that employs a belt and pulley system to transfer and measure power in machines, enabling power analysis and efficiency assessment.</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td colspan="4">Analysis of Spring (<a href="https://www.youtube.com/live/B6PpnZHqKFk?feature=share">Video</a>)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Maximum shear stress</td>
+      <td>The highest shear stress experienced by a spring under load, crucial for determining the spring's strength and fatigue life.</td>
+      <td>\(\frac{T}{J} = \frac{\tau}{r}\)<br>\(\Rightarrow \tau_{\text{max}} = K_w\frac{8PD}{\pi d^3}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Wahl's correction factor</td>
+      <td>It is a factor used to correct the stress distribution in the ends of helical springs, accounting for the effect of direct shear stress and curvature of spring.</td>
+      <td>\(K_w = \frac{4C-1}{4C-4} + \frac{0.615}{C}\quad \).....(Memorize)<br>Where, C is spring index \(C = \frac{D}{d}\)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Deflection</td>
+      <td>The displacement of a spring from its equilibrium position when subjected to an external force or load, determining its elastic deformation behavior.</td>
+      <td>\(\frac{T}{J} = \frac{G\theta}{L}\)\(\Rightarrow \theta = \frac{16PD^2N}{Gd^4}\quad \) & <br>\(\delta = \frac{D}{2}{\theta} = \frac{8PD^3N}{Gd^4}\)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td><b>Maximum Distortion Energy theory (<a href="https://youtu.be/Hf896_UPgDs">Video</a>)<br>Von Mises stress</td>
+      <td>A theory used to predict the yielding of materials under complex stress states, where the von Mises stress is calculated based on the principal stresses, representing the equivalent stress state for yielding. It is commonly employed in the analysis of ductile materials and helps determine failure criteria.</td>
+      <td>\(\sigma_{\text{VM}} = \sqrt{\frac{(\sigma_1 - \sigma_2)^2 + (\sigma_2 - \sigma_3)^2 + (\sigma_3 - \sigma_1)^2}{2}}\quad\).....(Memorize)</td>
+    </tr>
+  <!--------------------------------------------------------->
+    <tr>
+      <td>\(\Rightarrow\)</td>
+      <td>Sliding contact Bearing (<a href="https://youtu.be/4dASw99NVX4">Video</a>)</td>
+      <td>Various dimensionless numbers are used to understand the performance of a journal bearing. These numbers include the Bearing Characteristic Number, Bearing Modulus, Sommerfield Number, and Eccentricity Ratio.</td>
+      <td>(i) Bearing Characteristic Number: \(\frac{ZN_s}{P}\)<br>(ii) Bearing Modulus: Value of Bearing Characteristic Number when coefficient of friction is minimum<br>(iii) Sommerfield Number: \(S = \left(\frac{ZN_s}{P}\right)\left(\frac{r}{C}\right)^2\)<br>(iv) Eccentricity Ratio/Attitude: \(e = \frac{\text{Eccentricity}}{\text{Radial clearance}} =\frac{(R-r)-h_0}{(R-r)} = 1 - \frac{h_0}{C}\)<br>(v) Petroff's Equation: <br>Coefficient of friction: \(\mu = 2\pi^2(\frac{ZN_s}{P})(\frac{r}{c})\)</td>
+    </tr>
+  <!--------------------------------------------------------->
